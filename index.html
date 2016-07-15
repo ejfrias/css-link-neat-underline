@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="keywords" content="css, effect, inspiration, concept, web design, link, style, underline" />
+	<meta name="description" content="Style links with neater underline by EJ Frias" />
+	<meta name="author" content="EJ Frias" />
+	
+	<title>Style links with neater underline</title>
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.0.8/gridlex.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700">
+	<style>
+		/* Basically, just add this block of code to style the link */
+		a, a:link, a:visited, a:active, a:hover {
+			background-image: linear-gradient(to right,#06c 0,#06c 100%);
+			background-repeat: repeat-x;
+			background-position: 0 95%;
+			background-size: 100% 1px;
+			text-shadow: 3px 0 0 #fff, -3px 0 0 #fff;
+		}
+		
+		/* Styles used only for this demo page */
+		body {
+			color: #3a3a3a;
+			font: normal normal 16px/150% 'Roboto Slab', Calibri, Helvetica, Arial, serif;
+		}
+
+		h1, h3, a { color: #5d9cec; text-decoration: none; }
+		h3 {
+			font-weight: 400;
+			margin-bottom: 1.5em;
+		}
+
+		.main {
+			max-width: 70em;
+			margin: 0 auto;
+			padding: 2em 1.5em;
+		}
+		.content {
+			background-color: #fafafa;
+			border: 1px solid #eee;
+			border-radius: 3px;
+			margin-top: 2em;
+			padding: 1em;
+		}
+
+		.content h3 { margin-top: 3em; }
+		.content h3.no-margin-top { margin-top: 0; }
+		.col p:last-child { margin-bottom: 0; }
+		.align-center { text-align: center; }
+	</style>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="main">
+		<div class="grid">
+			<div class="col align-center">
+				<h1>css-link-neat-underline</h1>
+				<p>Style links with neater underline</p>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="grid">
+				<div class="col">
+					<h3 class="no-margin-top">Sagrada Família</h3>
+					<p>The <b><span lang="ca">Basílica i Temple Expiatori de la Sagrada Familia</span></b> (<small>Catalan pronunciation:&nbsp;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="#" title="Help:IPA for Catalan">[səˈɣɾaðə fəˈmiɫiə]</a></span>; <a href="#" title="Spanish language">Spanish</a>: <span lang="es"><i>Templo Expiatorio de la Sagrada Familia</i></span>; <a href="#" title="English language">English</a>: <a href="#" title="Basilica">Basilica</a> and <a href="#" class="mw-redirect" title="Expiation">Expiatory</a> Church of the <a href="#" title="Holy Family">Holy Family</a>) is a large <a href="#" title="Catholic Church">Roman Catholic</a> church in <a href="#" title="Barcelona">Barcelona</a>, designed by Spanish architect <a href="#" title="Antoni Gaudí">Antoni Gaudí</a> (1852–1926). Although incomplete, the church is a <a href="#" title="UNESCO">UNESCO</a> <a href="#" title="World Heritage Site">World Heritage Site</a>,<sup id="cite_ref-UNESCO_5-0" class="reference"><a href="#">[5]</a></sup> and in November 2010 <a href="#" title="Pope Benedict XVI">Pope Benedict&nbsp;XVI</a> consecrated and proclaimed it a <i><a href="#" title="Minor basilica">minor basilica</a></i>,<sup id="cite_ref-6" class="reference"><a href="#">[6]</a></sup><sup id="cite_ref-7" class="reference"><a href="#">[7]</a></sup><sup id="cite_ref-CNSvisit_8-0" class="reference"><a href="#">[8]</a></sup> as distinct from a <i><a href="#" title="Cathedral">cathedral</a></i>, which must be the seat of a bishop.</p>
+				</div>
+			</div>
+			
+			<div class="grid">
+				<div class="col align-center">
+					<p>&nbsp;</p>
+					<div class="made-by">
+						Made by <a href="http://ejfrias.com" target="_blank">EJ Frias</a><br />
+						View source code on <a href="https://github.com/ejfrias/tooltip" target="_blank">GitHub</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<defs>
+			<filter id="goo">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+				<feBlend in="SourceGraphic" in2="goo" />
+			</filter>
+		</defs>
+	</svg>
+
+</body>
+</html>
